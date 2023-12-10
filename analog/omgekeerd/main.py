@@ -12,8 +12,9 @@ def led_brightness(value):
         Zet de led intensiteit.
         Waarde tussen de 0 en 65535
     """
-
-    led.duty_u16(value)
+    max_val = 65535
+    reversed_value = max_val - min(value, max_val)
+    led.duty_u16(reversed_value)
 
 
 while True:
