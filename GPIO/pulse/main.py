@@ -12,5 +12,5 @@ def pulse(pin, short_time, long_time):
     pin.on
 
 while True:
-    pulse(gpio_pin, 0.2, 0.5)
+    pulse(gpio_pin, 0.2, 1.5)
 

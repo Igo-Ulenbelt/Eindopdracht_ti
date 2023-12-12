@@ -9,7 +9,6 @@ led_pins = [
     Pin(4, Pin.OUT)
 ]
 
-
 def leds(value, delay):
     for led in led_pins:
         if value % 2 == 1:
@@ -27,3 +26,8 @@ while True:
     leds(4, delay)
     leds(8, delay)
     leds(16, delay)
+    leds(8, delay)
+    leds(4, delay)
+    leds(2, delay)
+
+
